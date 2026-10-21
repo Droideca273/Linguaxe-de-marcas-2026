@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Formulario de incidencia</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <form action="incidencia.php" method="get">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for=“usuario">Usuario</label>
+            <input type="text“ id="usuario" name="usuario" placeholder="Nombre y apellidos" maxlength="50" size="20" /> <br/>
+            <input type="radio" name="cargo" id="alumno" value="alumno" />
+            <label for="alumno"> Alumno</label> <br/>
+            <input type="radio" name="cargo" id="profesor" value="profesor" checked="checked" />
+            <label for="profesor"> Profesor</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dónde se produce</legend>
+            <input type="radio" name="lugar" id="todo el departamento" value="todo el departamento" />
+            <label for="alumno"> Todo el departamento</label> <br/>
+            <input type="radio" name="lugar" id="todo el aula" value="todo el aula" />
+            <label for="profesor"> Todo el aula</label> <br/>
+            <input type="radio" name="lugar" id=" sólo en un equipo " value="sólo en un equipo" checked="checked" />
+            <label for="profesor"> Sólo en un equipo</label> <br/>
+            <label for="lugar">Identifica el dpto, aula o equipo</label>
+            <input type="text“ id="lugar" name="lugar" maxlength="20" size="15" />
+        </fieldset>
+        <fieldset>
+            <legend> Información dobre la incidencia</legend>
+            <label for="comentario">Descripción de la incidencia</label> <br>
+            <textarea name="comentario" rows="6" cols="50" placeholder="Escribe aquí tu comentario"></textarea> <br/>
+            <label for="nivel de urgencia">Nivel de urgencia:</label> <br/>
+            <input type="radio" name="urgencia" id="alto" value="alto" />
+            <label for="alumno">Alto</label> <br/>
+            <input type="radio" name="urgencia" id="medio="medio" />
+            <label for="profesor">Medio</label> <br/>
+            <input type="radio" name="urgencia" id="bajo" value="bajo" checked="checked" />
+            <label for="profesor">Bajo</label> <br/>
+            <label for="comentario">Me gustaría ser avisado por email cuando se resuelva la incidencia</label>
+            <input type="checkbox" name="avisar" value="on" checked="checked"/>
+        </fieldset>
+        <input type="submit" value="Entrar" />
+        <input type="reset" value="Limpiar" />
+    </form>
+</body>
+</html>
