@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Reserva de habitación</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <form action="reserva.php" method="get">
+        <fieldset>
+            <legend>Datos del solicitante</legend>
+            <label for="solicitante">Nombre del solicitante de la reserva</label> <br/>
+            <input type="text“ id="solicitante" name="solicitante" maxlength="100" size="85" required autofocus/>
+            <label for="telefono">Telefono de contacto</label>
+            <input type="text“ id="telefono" name="telefono" maxlength="9" size="8" placeholder="9 numeros" required/><br/>
+            <label for="telefono"> DNI (Seleccione un archivo de imagen)</label>
+            <input type="file" accept = “image/*" />
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
