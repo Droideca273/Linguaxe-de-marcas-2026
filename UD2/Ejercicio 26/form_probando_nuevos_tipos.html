@@ -11,10 +11,50 @@
         <fieldset>
             <legend>Para datos personales</legend>
             <label for="telefono">Telefono de contacto</label>
-            <input type="text“ id="telefono" name="telefono" maxlength="9" size="8" placeholder="9 numeros" required pattern="[0-1]{9}"/><br/>
+            <input type="text“ id="telefono" name="telefono" maxlength="9" size="8" placeholder="9 numeros" required pattern="[0-1]{9}" autocomplete="on"/><br/>
             <label for="correo">Correo electrónico</label>
-            <input type="text“ id="correo" name="correo" maxlength="50" size="40" placeholder="El formato correcto es nombre+@+servidor de correo"/><br/>
+            <input type="text“ id="correo" name="correo" maxlength="50" size="40" placeholder="El formato correcto es nombre+@+servidor de correo" autocomplete="on" novalidate =”novalidate”/><br/>
         </fieldset>
+        <fieldset>
+            <legend>Para valores numéricos</legend>
+            <label for="personas">Número de personas</label>
+            <input type="number" min="1" max="20" step="1" value="1" /><br/>
+            <label for="puntuación">Mueva la barra para indicar puntuación (Del 1 al 10)</label>
+            <input type="range" min="0" max="10" step="1" value="0" />
+        </fieldset>
+        <fieldset>
+            <legend>Url y búsqueda</legend>
+            <label for="url">Url del tu sitio</label>
+            <input type="url" novalidate =”novalidate” /><br/>
+            <label for="buscar">¿Qué te interesa buscar?</label>
+            <input type="search" />
+        </fieldset>
+        <fieldset>
+            <legend>Otros tipos</legend>
+            <label for="color">Color</label>
+            <input type="color" />
+        </fieldset>
+        <fieldset>
+            <legend>Para fechas</legend>
+            <label for="dia">Seleccione un día (Hasta fin de año):</label>
+            <input type="date" max="2020-12-31" /><br/>
+            <label dia="hora">Seleccione una hora:</label>
+            <input type="time" /><br/>
+            <label dia="mes">Seleccione un día (Hasta junio del 2020):</label>
+            <input type="month" /> <br/>
+            <label dia="semana">Seleccione una semana (Hasta junio del 2020):</label>
+            <input type="week" /><br/>
+            <label dia="fecha y hora">Seleccione fecha y hora:</label>
+            <input type="datetime-local" /><br/>
+        </fieldset>
+        <button type="submit">
+            <img src="images/validar.png" alt="Validar">
+            <label for="validar">Validar</label>
+        </button>
+        <button type="reset">
+            <img src="images/limpiar.PNG" alt="Limpiar">
+            <label for="limpiar">Limpiar</label>
+        </button>
     </form>
 </body>
 </html>
