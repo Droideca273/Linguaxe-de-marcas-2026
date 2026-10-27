@@ -13,14 +13,41 @@
             <label for="solicitante">Nombre del solicitante de la reserva</label> <br/>
             <input type="text“ id="solicitante" name="solicitante" maxlength="100" size="85" required autofocus/>
             <label for="telefono">Telefono de contacto</label>
-            <input type="text“ id="telefono" name="telefono" maxlength="9" size="8" placeholder="9 numeros" required/><br/>
+            <input type="text“ id="telefono" name="telefono" maxlength="9" size="8" placeholder="9 numeros" required pattern="[0-1]{9}"/><br/>
             <label for="telefono"> DNI (Seleccione un archivo de imagen)</label>
-            <input type="file" accept = “image/*" />
+            <input type="file" accept = “image/*" required/>
         </fieldset>
         <fieldset>
             <legend>Datos de la reserva</legend>
-            
+            <label for="habitación">Habitacion:</label><br/>
+            <select name="habitación" size="4">
+                <option value="1" selected>Azul</option>
+                <option value="2">Verde</option>
+                <option value="3">Amarilla</option>
+                <option value="4">Morada</option>
+            </select><br/>
+            <label for="habitación">Ocupacion:</label><br/>
+            <select name="ocupacion" size="2">
+                <option value="1">Individual</option>
+                <option value="2" selected>Doble</option>
+            </select><br/>
+            <label for="provincia" >Provincia:</label><br/>
+                <select id="provincia" name="provincia">
+                    <optgroup label="Galicia">
+                        <option value="C">La Coruña</option>
+                        <option value="L">Lugo</option>
+                        <option value="O">Orense</option>
+                        <option value="P">Pontevedra</option>
+                    </optgroup>
+                    <optgroup label="País Vasco">
+                        <option value="V">Vizcaya</option>
+                        <option value="G">Guipúzcoa</option>
+                        <option value="A">Álava</option>
+                    </optgroup>
+                </select>
         </fieldset>
+        <input type="submit" value="Entrar"/>
+        <input type="reset" value="Limpiar"/>
     </form>
 </body>
 </html>
