@@ -15,7 +15,7 @@ nav a:link, nav a:visited { text-decoration: none; color: hsl(120, 100%, 50%); b
 nav a:hover, nav a:active { text-decoration: none; color: #9bf5ff; background-color: #543683; margin: 0.3em; }
 
 /*principal: main:*/
-main { width: 75%; background-color: #ff4040 ; float: left; }
+main { width: 75%; background-color: aquamarine ; float: left; }
 main h1 { text-align: center; padding: 0.5em; color: olive; font-size: 1.4em; }
 main h2 { text-align: center; padding: 0.5em; color: grey; font-size: 1.2em; }
 main h3 { text-align: left; padding: 0.3em 3em; color: #663366; font-size: 1em;  }
