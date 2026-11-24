@@ -19,7 +19,7 @@ textarea:hover{
     background-color: lightblue;
 }
 input[type="radio"]:disabled{
-    background-color: lightgray;
+    background-color: #ddd;
 }
 input[type="submit"]:active{
     background-color: green;
